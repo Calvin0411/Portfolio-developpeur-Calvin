@@ -252,20 +252,6 @@ padding-top: 50px;
   text-align: center;
 }
 
-.html-item i { color: #E34F26; }
-.css-item i { color: #264de4; }
-.scss-item i { color: #C6538C; }
-.js-item i { color: #F0DB4F; }
-.react-item i { color: #61DBFB; }
-.redux-item i { color: #764ABC; }
-.vscode-item i { color: #007ACC; }
-.github-item i { color: #333; }
-.swagger-item i { color: #85EA2D; }
-.node-item i { color: #339933; }
-.figma-item i { color: #F24E1E; }
-.canva-item i { color: #00C4CC; }
-.capcut-item i { color: #FF6F61; }
-
 
 .projets {
   margin-top: 50px;
@@ -335,3 +321,39 @@ padding-top: 50px;
   text-decoration: underline; 
 }
 
+#contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  border-top: 2px solid #ccc; 
+  font-family: Arial, sans-serif;
+}
+
+#contact h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#contact p {
+  margin: 5px 0;
+  color: #555;
+}
+
+#contact i {
+  margin-right: 8px;
+  color: #a17d60; 
+}
+
+.contact-section, .social-section {
+  flex: 1;
+  padding: 0 20px;
+}
+#contact a {
+  color: inherit;             
+  text-decoration: none; 
+}
+
+#contact i {
+    color: #a17d60;
+}
