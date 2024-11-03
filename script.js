@@ -1,21 +1,14 @@
-function openModal(modalId, imageSrc, title, description, linkUrl) {
-    const modal = document.getElementById(modalId);
-    modal.style.display = "flex";
-    modal.querySelector("img").src = imageSrc;
-    modal.querySelector("h4").textContent = title;
-    modal.querySelector("p").textContent = description;
-    modal.querySelector("a").href = linkUrl;
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
 }
 
 function closeModal(modalId) {
     document.getElementById(modalId).style.display = "none";
 }
 
+// Fermer la modal si l'utilisateur clique en dehors d'elle
 window.onclick = function(event) {
-    const modals = document.getElementsByClassName('modal');
-    for (let i = 0; i < modals.length; i++) {
-        if (event.target === modals[i]) {
-            modals[i].style.display = "none";
-        }
+    if (event.target.className === 'modal') {
+        closeModal(event.target.id);
     }
 }

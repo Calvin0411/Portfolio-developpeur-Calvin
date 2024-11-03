@@ -2,8 +2,8 @@ body {
   background-color: #f8f7f6;
   font-family: roboto; 
   color: #333; 
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 25%;
+  margin-right: 25%;
   padding-top: 10px;
 }
 
@@ -104,16 +104,16 @@ body {
   color: #666;
 }
 
+/* Style pour la section Compétences */
 .competences {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
-  background-color: #f8f7f6;
   color: #333;
   padding: 40px 20px;
 }
 
-.main-competences{
+.main-competences {
   padding: 50px;
 }
 
@@ -123,25 +123,29 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-.competences-title {
+.section {
+padding-top: 50px;
+}
+
+.section-title {
   display: flex;
   justify-content: center;
   color: #333;
   font-size: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-weight: bold;
 }
 
 /* Conteneur pour les cartes */
 .competences-cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 20px;
+  padding-bottom: 20px;
 }
 
 /* Style pour chaque carte */
-.language-item {
+.item {
   width: 120px;
   height: 150px;
   display: flex;
@@ -156,90 +160,109 @@ body {
   transition: transform 0.2s;
 }
 
-.language-item:hover {
+.item:hover {
   transform: scale(1.05);
 }
 
 /* Style de l'icône */
-.language-item i {
+.item i {
   font-size: 40px;
   margin-bottom: 10px;
 }
 
-.language-item:hover {
-  transform: scale(1.05);
-}
-
 /* Couleurs spécifiques pour chaque icône */
-.html-item i {
-  color: #E34F26; 
-}
-
-.css-item i {
-  color: #264de4;
-}
-
-.scss-item i {
-  color: #C6538C; 
-}
-
-.js-item i {
-  color: #F0DB4F;
-}
-
-.react-item i {
-  color: #61DBFB;
-}
+.html-item i { color: #E34F26; }
+.css-item i { color: #264de4; }
+.scss-item i { color: #C6538C; }
+.js-item i { color: #F0DB4F; }
+.react-item i { color: #61DBFB; }
+.redux-item i { color: #764ABC; }
+.vscode-item i { color: #007ACC; }
+.github-item i { color: #333; }
+.swagger-item i { color: #85EA2D; }
+.node-item i { color: #339933; }
+.figma-item i { color: #F24E1E; }
+.canva-item i { color: #00C4CC; }
+.capcut-item i { color: #FF6F61; }
 
 /* Style du texte */
-.language-item h4 {
+.item h4 {
   font-size: 1rem;
   color: #333;
   margin: 0;
   text-align: center;
 }
 
-/* Titre pour la section */
-.tools-section .competences-title {
-  text-align: center;
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0; 
+  top: 0; 
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
 }
 
-/* Conteneur des cartes */
-.tools-cards {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* Style pour chaque outil (tool-item) */
-.tool-item {
-  background-color: #f5f5f5;
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto; 
   padding: 20px;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  text-align: center;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-  cursor: pointer;
-  width: 120px;
+  width: 80%; 
+  max-width: 500px; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.tool-item:hover {
-  transform: scale(1.05);
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-/* Icône de chaque outil */
-.tool-item i {
-  font-size: 2rem;
-  margin-bottom: 10px;
+.close:hover,
+.close:focus {
   color: #333;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-/* Nom de l’outil */
-.tool-item h4 {
-  font-size: 1.2rem;
-  color: #666;
+/* Style du texte dans la modal */
+.modal-content h4 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
+
+.modal-content p {
+  color: #555;
+}
+
+/* Style pour l'icône dans la modal */
+.modal-content i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  display: block; /* Centrer l'icône */
+  text-align: center; /* Centrer le texte de l'icône */
+}
+
+/* Couleurs spécifiques pour les icônes dans la modal (ajoutez les classes ici si nécessaire) */
+.html-item i { color: #E34F26; }
+.css-item i { color: #264de4; }
+.scss-item i { color: #C6538C; }
+.js-item i { color: #F0DB4F; }
+.react-item i { color: #61DBFB; }
+.redux-item i { color: #764ABC; }
+.vscode-item i { color: #007ACC; }
+.github-item i { color: #333; }
+.swagger-item i { color: #85EA2D; }
+.node-item i { color: #339933; }
+.figma-item i { color: #F24E1E; }
+.canva-item i { color: #00C4CC; }
+.capcut-item i { color: #FF6F61; }

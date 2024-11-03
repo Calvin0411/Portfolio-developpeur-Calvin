@@ -53,62 +53,184 @@
                     <img src="img/code_calvin.jpg" alt="Image représentant mes compétences">
                 </div>
             </div>
-
-            <section>
-                <div>
-                    <h3 class="competences-title">Langages</h3>
-                </div>
+        
+            <div class="section">
+                <h3 class="section-title">Langages</h3>
                 <div class="competences-cards">
-                    <div class="language-item html-item" onclick="openModal('htmlModal')">
+                    <div class="item html-item" onclick="openModal('htmlModal')">
                         <i class="fa-brands fa-html5"></i>
                         <h4>HTML</h4>
                     </div>
-                    <div class="language-item css-item" onclick="openModal('cssModal')">
+                    <div class="item css-item" onclick="openModal('cssModal')">
                         <i class="fa-brands fa-css3"></i>
                         <h4>CSS</h4>
                     </div>
-                    <div class="language-item scss-item" onclick="openModal('scssModal')">
+                    <div class="item scss-item" onclick="openModal('scssModal')">
                         <i class="fa-brands fa-sass"></i>
                         <h4>SCSS</h4>
                     </div>
-                    <div class="language-item js-item" onclick="openModal('jsModal')">
+                    <div class="item js-item" onclick="openModal('jsModal')">
                         <i class="fa-brands fa-js"></i>
                         <h4>JavaScript</h4>
                     </div>
-                    <div class="language-item react-item" onclick="openModal('reactModal')">
+                    <div class="item react-item" onclick="openModal('reactModal')">
                         <i class="fa-brands fa-react"></i>
                         <h4>React</h4>
                     </div>
                 </div>
-            </section>
-            
-            <section class="tools-section">
-                <div>
-                    <h3 class="competences-title">Outils de développement</h3>
-                </div>
-                <div class="tools-cards">
-                    <div class="tool-item" onclick="openModal('reduxModal')">
+            </div>
+        
+            <div class="section">
+                <h3 class="section-title">Outils de développement</h3>
+                <div class="competences-cards">
+                    <div class="item redux-item" onclick="openModal('reduxModal')">
                         <i class="fa-brands fa-react"></i>
                         <h4>Redux</h4>
                     </div>
-                    
-                    <div class="tool-item" onclick="openModal('vscodeModal')">
+                    <div class="item vscode-item" onclick="openModal('vscodeModal')">
                         <i class="fa-solid fa-code"></i>
                         <h4>VS Code</h4>
                     </div>
-            
-                    <div class="tool-item" onclick="openModal('githubModal')">
+                    <div class="item github-item" onclick="openModal('githubModal')">
                         <i class="fa-brands fa-github"></i>
                         <h4>GitHub</h4>
                     </div>
-            
-                    <div class="tool-item" onclick="openModal('swaggerModal')">
+                    <div class="item swagger-item" onclick="openModal('swaggerModal')">
                         <i class="fa-solid fa-route"></i>
                         <h4>Swagger</h4>
                     </div>
+                    <div class="item node-item" onclick="openModal('nodeModal')">
+                        <i class="fa-brands fa-node-js"></i>
+                        <h4>Node.js</h4>
+                    </div>
                 </div>
-            </section>
-            
+            </div>
+        
+            <div class="section">
+                <h3 class="section-title">Outils de création</h3>
+                <div class="competences-cards">
+                    <div class="item figma-item" onclick="openModal('figmaModal')">
+                        <i class="fa-brands fa-figma"></i>
+                        <h4>Figma</h4>
+                    </div>
+                    <div class="item canva-item" onclick="openModal('canvaModal')">
+                        <i class="fa-solid fa-palette"></i>
+                        <h4>Canva</h4>
+                    </div>
+                    <div class="item capcut-item" onclick="openModal('capcutModal')">
+                        <i class="fa-solid fa-video"></i>
+                        <h4>CapCut</h4>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Modals -->
+            <div id="htmlModal" class="modal">
+                <div class="modal-content html-item"> 
+                    <span class="close" onclick="closeModal('htmlModal')">&times;</span>
+                    <i class="fa-brands fa-html5"></i>
+                    <h4>HTML</h4>
+                    <p>HTML est le langage de base pour structurer le contenu des pages web. Il permet de définir les éléments visuels tels que les titres, les paragraphes et les images.</p>
+                </div>
+            </div>
+            <div id="cssModal" class="modal">
+                <div class="modal-content css-item"> 
+                    <span class="close" onclick="closeModal('cssModal')">&times;</span>
+                    <i class="fa-brands fa-css3"></i> 
+                    <h4>CSS</h4>
+                    <p>CSS permet de styliser les éléments HTML, en ajoutant des couleurs, des polices, des mises en page et d'autres éléments visuels pour améliorer l'apparence des pages web.</p>
+                </div>
+            </div>
+            <div id="scssModal" class="modal">
+                <div class="modal-content scss-item"> 
+                    <span class="close" onclick="closeModal('scssModal')">&times;</span>
+                    <i class="fab fa-sass"></i> 
+                    <h4>SCSS</h4>
+                    <p>SCSS, une extension de CSS, ajoute des fonctionnalités avancées comme les variables, les mixins et les imbrications, facilitant l'organisation et la maintenance des styles.</p>
+                </div>
+            </div>
+            <div id="jsModal" class="modal">
+                <div class="modal-content js-item"> 
+                    <span class="close" onclick="closeModal('jsModal')">&times;</span>
+                    <i class="fab fa-js"></i> 
+                    <h4>JavaScript</h4>
+                    <p>JavaScript rend les pages web interactives, en permettant de manipuler le DOM, gérer les événements et bien plus encore.</p>
+                </div>
+            </div>
+            <div id="reactModal" class="modal">
+                <div class="modal-content react-item"> 
+                    <span class="close" onclick="closeModal('reactModal')">&times;</span>
+                    <i class="fab fa-react"></i> 
+                    <h4>React</h4>
+                    <p>React est une bibliothèque JavaScript pour créer des interfaces utilisateur dynamiques avec des composants réutilisables.</p>
+                </div>
+            </div>
+            <div id="reduxModal" class="modal">
+                <div class="modal-content redux-item"> 
+                    <span class="close" onclick="closeModal('reduxModal')">&times;</span>
+                    <i class="fa-brands fa-react"></i>
+                    <h4>Redux</h4>
+                    <p>Redux est un gestionnaire d'état pour JavaScript, permettant de centraliser les données de l'application et de simplifier leur gestion.</p>
+                </div>
+            </div>
+            <div id="vscodeModal" class="modal">
+                <div class="modal-content vscode-item"> 
+                    <span class="close" onclick="closeModal('vscodeModal')">&times;</span>
+                    <i class="fas fa-code"></i> 
+                    <h4>VS Code</h4>
+                    <p>Visual Studio Code est un éditeur de code polyvalent avec de nombreuses extensions pour le développement web.</p>
+                </div>
+            </div>
+            <div id="githubModal" class="modal">
+                <div class="modal-content github-item"> 
+                    <span class="close" onclick="closeModal('githubModal')">&times;</span>
+                    <i class="fab fa-github"></i> 
+                    <h4>GitHub</h4>
+                    <p>GitHub est une plateforme de versionnage et de collaboration pour gérer et partager du code.</p>
+                </div>
+            </div>
+            <div id="swaggerModal" class="modal">
+                <div class="modal-content swagger-item"> 
+                    <span class="close" onclick="closeModal('swaggerModal')">&times;</span>
+                    <i class="fa-solid fa-route"></i>
+                    <h4>Swagger</h4>
+                    <p>Swagger est un ensemble d'outils open-source pour concevoir, documenter et tester des API REST. Il permet de générer automatiquement des documents interactifs, facilitant la compréhension et l'interaction avec les API pour les développeurs.</p>
+                </div>
+            </div>
+            <div id="nodeModal" class="modal">
+                <div class="modal-content node-item">
+                    <span class="close" onclick="closeModal('nodeModal')">&times;</span>
+                    <i class="fab fa-node-js"></i>
+                    <h4>Node.js</h4>
+                    <p>Node.js est un environnement d'exécution JavaScript côté serveur, permettant de créer des applications réseau évolutives.</p>
+                </div>
+            </div>
+            <div id="figmaModal" class="modal">
+                <div class="modal-content figma-item">
+                    <span class="close" onclick="closeModal('figmaModal')">&times;</span>
+                    <i class="fa-brands fa-figma"></i>
+                    <h4>Figma</h4>
+                    <p>Figma est un outil de design collaboratif pour créer des prototypes et des maquettes d'interface utilisateur.</p>
+                </div>
+            </div>
+            <div id="canvaModal" class="modal">
+                <div class="modal-content canva-item"> 
+                    <span class="close" onclick="closeModal('canvaModal')">&times;</span>
+                    <i class="fas fa-paint-brush"></i> 
+                    <h4>Canva</h4>
+                    <p>Canva est un outil de design graphique en ligne permettant de créer facilement des visuels attrayants pour le web et les réseaux sociaux.</p>
+                </div>
+            </div>
+            <div id="capcutModal" class="modal">
+                <div class="modal-content capcut-item"> 
+                    <span class="close" onclick="closeModal('capcutModal')">&times;</span>
+                    <i class="fas fa-video"></i> 
+                    <h4>CapCut</h4>
+                    <p>CapCut est une application de montage vidéo intuitive qui permet de créer des vidéos accrocheuses pour les réseaux sociaux.</p>
+                </div>
+            </div>
+        </section>
+        <section id="projets">
         </section>
     </main>
     <script src="script.js"></script>
