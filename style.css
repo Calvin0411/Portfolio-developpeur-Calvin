@@ -132,7 +132,7 @@ padding-top: 50px;
   justify-content: center;
   color: #333;
   font-size: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: bold;
 }
 
@@ -248,11 +248,10 @@ padding-top: 50px;
 .modal-content i {
   font-size: 40px;
   margin-bottom: 10px;
-  display: block; /* Centrer l'icône */
-  text-align: center; /* Centrer le texte de l'icône */
+  display: block; 
+  text-align: center;
 }
 
-/* Couleurs spécifiques pour les icônes dans la modal (ajoutez les classes ici si nécessaire) */
 .html-item i { color: #E34F26; }
 .css-item i { color: #264de4; }
 .scss-item i { color: #C6538C; }
@@ -266,3 +265,73 @@ padding-top: 50px;
 .figma-item i { color: #F24E1E; }
 .canva-item i { color: #00C4CC; }
 .capcut-item i { color: #FF6F61; }
+
+
+.projets {
+  margin-top: 50px;
+  h2 {
+    color: #a17d60; 
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  p {
+    padding-top: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    padding-bottom: 20px;
+  }
+  h4{
+    display: flex;
+    justify-content: center;
+    color: #333;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+}
+
+
+
+.card {
+  display: flex;
+  align-items: center; 
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 16px;
+  margin-bottom: 25px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  flex: 1; 
+  margin-right: 16px; 
+}
+
+.card-link {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.card-image {
+  width: 400px; 
+  height: auto; 
+  border-radius: 5px;
+  object-fit: cover; 
+}
+
+.github-link {
+  margin-top: 10px; 
+  color: #333; 
+}
+
+.github-link a {
+  text-decoration: none; 
+  color: #333; 
+}
+
+.github-link a:hover {
+  text-decoration: underline; 
+}
+
