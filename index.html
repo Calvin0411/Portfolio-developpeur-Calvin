@@ -12,7 +12,6 @@
 </head>
 <body>
     <header>
-        
         <div class="logo">
             <a href="#accueil">
                 <h1>
@@ -31,53 +30,87 @@
           </nav>
     </header>
     <main>
-        <section class="a-propos">
+        <section class="a-propos" id="a-propos">
             <div>
                 <h2>À propos</h2>
                     <h3>Je suis Calvin, je suis Intégrateur Web</h3>
-                        <p>Élevé  au cœur de la campagne, j'ai toujours été éloigné des grands centres urbains, mais ma curiosité insatiable pour le monde qui m'entoure m'a poussé à explorer de nouveaux horizons. Cette quête d'apprentissage m'a conduit vers le développement web, un domaine où je peux allier créativité et technologie pour donner vie à des projets innovants.
-                            Passionné par la création de startups qui aspirent à transformer le monde, je suis motivé par l'idée de développer des solutions qui peuvent avoir un impact positif sur la société. Mon objectif est d'élargir mes compétences et de participer à des projets qui changent les choses, en mettant en avant des valeurs de collaboration, d'innovation et de durabilité.
-                            Je suis impatient de continuer ce voyage, d'explorer de nouvelles opportunités et de contribuer à des initiatives qui façonnent un avenir meilleur.
-                        </p>
+                    <p>Élevé  au cœur de la campagne, j'ai toujours été éloigné des grands centres urbains, mais ma curiosité insatiable pour le monde qui m'entoure m'a poussé à explorer de nouveaux horizons. Cette quête d'apprentissage m'a conduit vers le développement web, un domaine où je peux allier créativité et technologie pour donner vie à des projets innovants.
+                        Passionné par la création de startups qui aspirent à transformer le monde, je suis motivé par l'idée de développer des solutions qui peuvent avoir un impact positif sur la société. Mon objectif est d'élargir mes compétences et de participer à des projets qui changent les choses, en mettant en avant des valeurs de collaboration, d'innovation et de durabilité.
+                        Je suis impatient de continuer ce voyage, d'explorer de nouvelles opportunités et de contribuer à des initiatives qui façonnent un avenir meilleur.
+                    </p>
             </div>
             <div>
                 <img src="img/photo_calvin.jpg" alt="photo de calvin">
             </div>
         </section>
-        <section class="competences">
-            <div>
-              <h2>Compétences</h2>
-              <p>Après avoir complété une formation d'intégrateur web avec OpenClassroom, j'ai acquis les compétences essentielles nécessaires à la création d'un site web. Je suis désormais capable d'utiliser les outils suivants :</p>
+        <section id="compétences">
+            <div class="competences">
+                <div class="main-competences">
+                    <h2>Compétences</h2>
+                    <p>Après avoir complété une formation de 9 mois en intégration web avec OpenClassroom en 2024, j'ai acquis les compétences essentielles pour concevoir et développer des sites web et des applications dynamiques. Cette formation m'a permis de maîtriser les langages de base (HTML, CSS, JavaScript), ainsi que des frameworks et bibliothèques modernes comme React et Redux. J'ai également appris à utiliser des outils de développement tels que Visual Studio Code et GitHub, et à appliquer des bonnes pratiques pour créer des projets intuitifs, accessibles et performants. Maîtrisant à la fois les bases du design et les aspects techniques, je suis prêt à réaliser des projets qui allient esthétique et efficacité.</p>
+                </div>
+                <div>
+                    <img src="img/code_calvin.jpg" alt="Image représentant mes compétences">
+                </div>
             </div>
-            <div class="competence-category">
-              <h3>Langages</h3>
-              <ul>
-                <li><i class="fa-brands fa-html5"></i> HTML</li>
-                <li><i class="fa-brands fa-css3"></i> CSS</li>
-                <li><i class="fa-brands fa-sass"></i> SCSS</li>
-                <li><i class="fa-brands fa-js"></i> JavaScript</li>
-                <li><i class="fa-brands fa-react"></i> React</li>
-              </ul>
-            </div> 
-        
-            <div class="competence-category">
-              <h3>Outils de Développement</h3>
-              <ul>
-                <li>VS Code</li>
-                <li>GitHub</li>
-              </ul>
-            </div>
-        
-            <div class="competence-category">
-              <h3>Outils de Création</h3>
-              <ul>
-                <li>iMovie</li>
-                <li>CapCut</li>
-                <li>Canva</li>
-              </ul>
-            </div>
-          </section>
-          
+
+            <section>
+                <div>
+                    <h3 class="competences-title">Langages</h3>
+                </div>
+                <div class="competences-cards">
+                    <div class="language-item html-item" onclick="openModal('htmlModal')">
+                        <i class="fa-brands fa-html5"></i>
+                        <h4>HTML</h4>
+                    </div>
+                    <div class="language-item css-item" onclick="openModal('cssModal')">
+                        <i class="fa-brands fa-css3"></i>
+                        <h4>CSS</h4>
+                    </div>
+                    <div class="language-item scss-item" onclick="openModal('scssModal')">
+                        <i class="fa-brands fa-sass"></i>
+                        <h4>SCSS</h4>
+                    </div>
+                    <div class="language-item js-item" onclick="openModal('jsModal')">
+                        <i class="fa-brands fa-js"></i>
+                        <h4>JavaScript</h4>
+                    </div>
+                    <div class="language-item react-item" onclick="openModal('reactModal')">
+                        <i class="fa-brands fa-react"></i>
+                        <h4>React</h4>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="tools-section">
+                <div>
+                    <h3 class="competences-title">Outils de développement</h3>
+                </div>
+                <div class="tools-cards">
+                    <div class="tool-item" onclick="openModal('reduxModal')">
+                        <i class="fa-brands fa-react"></i>
+                        <h4>Redux</h4>
+                    </div>
+                    
+                    <div class="tool-item" onclick="openModal('vscodeModal')">
+                        <i class="fa-solid fa-code"></i>
+                        <h4>VS Code</h4>
+                    </div>
+            
+                    <div class="tool-item" onclick="openModal('githubModal')">
+                        <i class="fa-brands fa-github"></i>
+                        <h4>GitHub</h4>
+                    </div>
+            
+                    <div class="tool-item" onclick="openModal('swaggerModal')">
+                        <i class="fa-solid fa-route"></i>
+                        <h4>Swagger</h4>
+                    </div>
+                </div>
+            </section>
+            
+        </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
