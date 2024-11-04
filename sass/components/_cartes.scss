@@ -1,0 +1,56 @@
+
+.competences-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+  
+
+.item {
+    width: 120px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+  
+.item:hover {
+    transform: scale(1.05);
+}
+  
+
+.item i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+  
+
+.html-item i { color: #E34F26; }
+.css-item i { color: #264de4; }
+.scss-item i { color: #C6538C; }
+.js-item i { color: #F0DB4F; }
+.react-item i { color: #61DBFB; }
+.redux-item i { color: #764ABC; }
+.vscode-item i { color: #007ACC; }
+.github-item i { color: #333; }
+.swagger-item i { color: #85EA2D; }
+.node-item i { color: #339933; }
+.figma-item i { color: #F24E1E; }
+.canva-item i { color: #00C4CC; }
+.capcut-item i { color: #FF6F61; }
+  
+
+.item h4 {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+    text-align: center;
+}
