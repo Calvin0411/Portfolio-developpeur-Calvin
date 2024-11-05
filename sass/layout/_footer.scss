@@ -59,3 +59,9 @@
 #contact .fa-phone {
     color: blac; 
 }
+
+@media (max-width: 768px) {
+    #contact {
+        flex-direction: column;
+    }
+}

@@ -54,3 +54,23 @@
     margin: 0;
     text-align: center;
 }
+
+@media (max-width: 768px){
+    .competences-cards {
+        padding-top: 30px;
+        gap: 20px;
+    }
+
+    .item {
+        width: 90px;
+        height: 100px;
+    }
+
+    .item i {
+        margin-bottom: 0;
+    }
+
+    .item h4 {
+        display: none;
+    }
+}
