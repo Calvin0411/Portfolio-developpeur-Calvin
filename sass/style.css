@@ -139,12 +139,12 @@ html {
 }
 header {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  background-color: rgb(164, 171, 197);
+  border-radius: 20px;
 }
 
 .logo img {
@@ -169,6 +169,8 @@ header {
 @media (max-width: 768px) {
   header {
     padding: 0%;
+    border-radius: 0px;
+    padding-right: 20px;
   }
   .logo img {
     height: 40px;
@@ -252,6 +254,8 @@ header {
   flex-direction: row-reverse;
   color: #333;
   padding: 40px 20px;
+  background-color: antiquewhite;
+  border-radius: 20px;
 }
 
 .main-competences {
@@ -297,6 +301,7 @@ header {
   .competences {
     flex-direction: column;
     padding: 0;
+    border-radius: 0px;
   }
   .section {
     padding: 20px 20px;
@@ -310,10 +315,10 @@ header {
   }
   .competences img {
     width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
     height: auto;
-    border-radius: 25px;
+    border-radius: 5px;
     background-color: #f8f7f6;
     box-shadow: none;
   }
@@ -384,9 +389,13 @@ header {
 
 .projets {
   margin-top: 50px;
+  padding: 40px 20px;
+  background-color: #F6D2B8;
+  border-radius: 15px;
+  margin-bottom: 5%;
 }
 .projets h2 {
-  color: #a17d60;
+  color: black;
   font-size: 2rem;
   margin-bottom: 10px;
 }
@@ -394,7 +403,7 @@ header {
   padding-top: 20px;
   font-size: 1rem;
   line-height: 1.6;
-  color: #666;
+  color: black;
   padding-bottom: 20px;
 }
 .projets h4 {
@@ -411,6 +420,7 @@ header {
   .projets {
     padding: 40px 20px;
     margin-top: 0;
+    border-radius: 0px;
   }
   .projets h2 {
     font-size: 20px;
@@ -473,7 +483,7 @@ header {
 }
 
 #contact .fa-envelope {
-  color: blue;
+  color: rgb(0, 0, 0);
 }
 
 #contact .fa-phone {
@@ -485,14 +495,31 @@ header {
     flex-direction: column;
   }
 }
+.study-projects {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .card {
   display: flex;
   align-items: center;
+  background-color: #f8f7f6;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 16px;
   margin-bottom: 25px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h4 {
+  color: #a17d60;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .card-content {
@@ -512,6 +539,7 @@ header {
   border-radius: 5px;
   -o-object-fit: cover;
      object-fit: cover;
+  box-shadow: 5px 5px 0px #a17d60;
 }
 
 .github-link {
@@ -539,5 +567,10 @@ header {
   .card-image {
     width: 100%;
     max-height: none;
+  }
+  .study-projects {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }/*# sourceMappingURL=style.css.map */

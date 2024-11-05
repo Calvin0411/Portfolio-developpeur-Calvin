@@ -1,11 +1,29 @@
+.study-projects {
+    width: 80%;
+    margin-left: 10%;
+    margin-right:10%;
+}
+
 .card {
     display: flex;
     align-items: center; 
+    background-color: #f8f7f6;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 16px;
     margin-bottom: 25px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card h4 {
+    color : #a17d60
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); 
 }
 
 .card-content {
@@ -23,7 +41,8 @@
     height: auto;
     max-height: 200px;
     border-radius: 5px;
-    object-fit: cover; 
+    object-fit: cover;
+    box-shadow: 5px 5px 0px #a17d60;
 }
 
 .github-link {
@@ -40,6 +59,8 @@
     text-decoration: underline; 
 }
 
+
+
 @media (max-width: 768px) {
     .card {
         flex-direction: column; 
@@ -53,5 +74,11 @@
     .card-image {
         width: 100%;
         max-height: none;
+    }
+
+    .study-projects {
+        width: 90%;
+        margin-left: 5%;
+        margin-right:5%;
     }
 }
