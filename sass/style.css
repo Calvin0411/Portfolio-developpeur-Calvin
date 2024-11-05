@@ -3,11 +3,29 @@ body {
   background-color: #f8f7f6;
   font-family: roboto;
   color: #333;
-  margin-left: 25%;
-  margin-right: 25%;
   padding-top: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
+@media (max-width: 1550px) {
+  body {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 .competences-cards {
   display: flex;
   justify-content: space-evenly;
@@ -155,7 +173,8 @@ header {
 .a-propos img {
   width: 350px;
   height: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 .a-propos div:first-child {
@@ -190,7 +209,8 @@ header {
 .competences img {
   width: 550px;
   height: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 .section {
@@ -227,6 +247,7 @@ header {
   width: 80%;
   max-width: 500px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .close {
@@ -263,6 +284,7 @@ header {
   margin-bottom: 10px;
   display: block;
   text-align: center;
+  padding-left: 15px;
 }
 
 .projets {
