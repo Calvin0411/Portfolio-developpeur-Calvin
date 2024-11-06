@@ -32,6 +32,27 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Styles pour la scrollbar entière */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a17d60;
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+}
+
+/* Style pour la thumb au survol */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #6b4b34;
+}
+
 .competences-cards {
   display: flex;
   justify-content: space-evenly;
@@ -176,6 +197,7 @@ header {
     padding-right: 20px;
   }
   .logo img {
+    width: auto;
     height: 70px;
     padding-left: 20px;
   }
@@ -305,6 +327,7 @@ header {
     flex-direction: column;
     padding: 0;
     border-radius: 0px;
+    padding-bottom: 30px;
   }
   .section {
     padding: 20px 20px;
@@ -322,7 +345,6 @@ header {
     margin-right: 5%;
     height: auto;
     border-radius: 5px;
-    background-color: #f8f7f6;
     box-shadow: none;
   }
   .section-title {
@@ -516,7 +538,7 @@ header {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card h4 {
+.card h3 {
   color: #a17d60;
 }
 

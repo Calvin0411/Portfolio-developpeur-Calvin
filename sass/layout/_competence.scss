@@ -26,7 +26,6 @@
 
 .competences img {
     width: 550px; 
-    
     height: auto;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
@@ -55,6 +54,7 @@
         flex-direction: column;
         padding: 0;
         border-radius: 0px;
+        padding-bottom: 30px;
     }
 
     .section {
@@ -77,7 +77,6 @@
         margin-right: 5%;
         height: auto;
         border-radius: 5px;
-        background-color: #f8f7f6;
         box-shadow: none;
     }
 
