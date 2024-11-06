@@ -3,6 +3,7 @@ body {
   background-color: #f8f7f6;
   font-family: roboto;
   color: #333;
+  margin-top: 0;
   padding-top: 10px;
   margin-left: 20%;
   margin-right: 20%;
@@ -146,11 +147,11 @@ header {
   background-color: rgb(164, 171, 197);
   border-radius: 20px;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 30px;
 }
 
 .logo img {
-  height: 50px;
+  height: 100px;
 }
 
 .navigation ul {
@@ -175,7 +176,7 @@ header {
     padding-right: 20px;
   }
   .logo img {
-    height: 40px;
+    height: 70px;
     padding-left: 20px;
   }
   .navigation ul {
@@ -535,7 +536,7 @@ header {
 }
 
 .card-image {
-  width: 300px;
+  width: 100%;
   height: auto;
   max-height: 200px;
   border-radius: 5px;
