@@ -391,7 +391,6 @@ header {
   cursor: pointer;
 }
 
-/* Style du texte dans la modal */
 .modal-content h4 {
   margin: 0;
   font-size: 20px;
@@ -405,7 +404,6 @@ header {
   color: #555;
 }
 
-/* Style pour l'icône dans la modal */
 .modal-content i {
   font-size: 40px;
   margin-bottom: 10px;
