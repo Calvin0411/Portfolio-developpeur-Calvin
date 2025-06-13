@@ -1,0 +1,50 @@
+.projets {
+    margin-top: 50px;
+    padding: 40px 20px;
+    background-color: #F6D2B8;
+    border-radius: 15px;
+    margin-bottom: 5%;
+
+    h2 {
+      color: black; 
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    p {
+      padding-top: 20px;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: black;
+      padding-bottom: 20px;
+    }
+    h4{
+      display: flex;
+      justify-content: center;
+      color: #333;
+      font-size: 25px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+  }
+  
+  
+
+  @media (max-width: 768px) {
+
+
+    .projets {
+      padding: 40px 20px;
+      margin-top: 0;
+      border-radius: 0px;
+    
+      h2 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+    
+  }
