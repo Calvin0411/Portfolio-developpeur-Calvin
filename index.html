@@ -28,52 +28,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="accueil">
-        <div class="logo">
-            <a href="#accueil">
-                <h1>
-                    <img src="img/new_logo_calvin_webp.webp" alt="Logo Calvin Ramjeeawon" />
-                </h1>
-            </a>
-          </div>
-          <nav class="navigation">
-            <ul>
-              <li><a href="#accueil">Accueil</a></li>
-              <li><a href="#a-propos">À propos</a></li>
-              <li><a href="#compétences">Compétences</a></li>
-              <li><a href="#projets">Projets</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-    </header>
-    <main>
-        <section class="a-propos" id="a-propos">
-            
-            <div>
-                <h2>À propos</h2>             
-                    <h3>Je suis Calvin, je suis Intégrateur Web</h3>
-                    <p>Élevé  au cœur de la campagne, j'ai toujours été éloigné des grands centres urbains, mais ma curiosité insatiable pour le monde qui m'entoure m'a poussé à explorer de nouveaux horizons. Cette quête d'apprentissage m'a conduit vers le développement web, un domaine où je peux allier créativité et technologie pour donner vie à des projets innovants.
-                        Passionné par la création de startups qui aspirent à transformer le monde, je suis motivé par l'idée de développer des solutions qui peuvent avoir un impact positif sur la société. Mon objectif est d'élargir mes compétences et de participer à des projets qui changent les choses, en mettant en avant des valeurs de collaboration, d'innovation et de durabilité.
-                        Je suis impatient de continuer ce voyage, d'explorer de nouvelles opportunités et de contribuer à des initiatives qui façonnent un avenir meilleur.
-                    </p>
-            </div>
-            <div>
-                <img src="img/photo_calvin_webp.webp" alt="photo de calvin">
-            </div>
-        </section>
-        <section id="compétences">
-            <div class="competences">
-                <div class="main-competences">
-                    <h2>Compétences</h2>
-                    <p>Après avoir complété une formation de 9 mois en intégration web avec OpenClassroom en 2024, j'ai acquis les compétences essentielles pour concevoir et développer des sites web et des applications dynamiques. Cette formation m'a permis de maîtriser les langages de base (HTML, CSS, JavaScript), ainsi que des frameworks et bibliothèques modernes comme React et Redux. J'ai également appris à utiliser des outils de développement tels que Visual Studio Code et GitHub, et à appliquer des bonnes pratiques pour créer des projets intuitifs, accessibles et performants. Maîtrisant à la fois les bases du design et les aspects techniques, je suis prêt à réaliser des projets qui allient esthétique et efficacité.</p>
-                </div>
-                <div>
-                    <img src="img/code_calvin_webp.webp" alt="Image représentant mes compétences">
-                </div>
-            </div>
-        
-            <div class="section">
-                <h3 class="section-title">Langages</h3>
+<header id="accueil">
+  <h1>CALVIN RAMJEEAWON</h1>
+  <div class="content">
+    <h2>Développeur<br>Informatique</h2>
+    <p>Une bonne conception, c’est mon expression unique. Mes projets, audacieux comme mon parcours en web, mêlent design et technologie avec innovation et impact durable.</p>
+    <a href="mailto:ramjeeawoncalvin@gmail.com" class="contact-link">
+      <i class="fa-regular fa-envelope"></i> CONTACTEZ-MOI
+    </a>
+  </div>
+</header>
+<nav class="main-nav">
+  <ul>
+    <li><a href="#competences">Compétences</a></li>
+    <li><a href="#projets">Projets</a></li>
+    <li><a href="#creations" id="openModalBtn">Créations</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+<section class="présentation">
+  <h2 class="title-section">Présentation</h2>
+  <div class="présentation-content">
+    <p>
+      Après avoir complété une formation de 9 mois en intégration web avec OpenClassroom en 2024, 
+      j'ai acquis les compétences essentielles pour concevoir et développer des sites web et des applications dynamiques. Cette formation m'a permis de maîtriser les langages de base (HTML, CSS, JavaScript), ainsi que des frameworks et bibliothèques modernes comme React et Redux. J'ai également appris à utiliser des outils de développement tels que Visual Studio Code et GitHub, et à appliquer des bonnes pratiques pour créer des projets intuitifs, 
+      accessibles et performants. Maîtrisant à la fois les bases du design et les aspects techniques, je suis prêt à réaliser des projets qui allient esthétique et efficacité.
+    </p>
+    <img src="img/code_calvin_webp.webp" alt="code de Calvin en 2024">
+  </div>
+</section>
+
+
+<section id="competences" class="compétences" >
+    <h2 class="title-section">Compétences</h2>
+    <h3 class="section-title">LANGAGES</h3>
                 <div class="competences-cards">
                     <div class="item html-item" role="button" tabindex="0" onclick="openModal('htmlModal')" onkeydown="handleKey(event, 'htmlModal')">
                         <i class="fa-brands fa-html5"></i>
@@ -99,7 +89,7 @@
             </div>
         
             <div class="section">
-                <h3 class="section-title">Outils de développement</h3>
+                <h3 class="section-title">OUTILS DE DEVELOPPEMENT</h3>
                 <div class="competences-cards">
                     <div class="item redux-item" role="button" tabindex="0" onclick="openModal('reduxModal')" onkeydown="handleKey(event, 'reduxModal')">
                         <i class="fa-brands fa-react"></i>
@@ -125,7 +115,7 @@
             </div>
         
             <div class="section">
-                <h3 class="section-title">Outils de création</h3>
+                <h3 class="section-title">OUTILS DE CREATION</h3>
                 <div class="competences-cards">
                     <div class="item figma-item" role="button" tabindex="0" onclick="openModal('figmaModal')" onkeydown="handleKey(event, 'figmaModal')">
                         <i class="fa-brands fa-figma"></i>
@@ -257,114 +247,153 @@
                     <p>CapCut est un éditeur de vidéo facile à utiliser, parfait pour créer et modifier des vidéos pour les réseaux sociaux.</p>
                 </div>
             </div>
-        </section>
-        
-        <section id="projets" class="projets">
-            <div>
-                <h2>Projets</h2>
-                <p>Au cours de ma formation, j'ai eu l'opportunité de travailler sur divers projets d'études, chacun d'eux m'ayant permis d'acquérir de nouvelles compétences, allant des tâches les plus simples aux plus complexes. Voici un aperçu de certains de mes projets réalisés dans leur intégralité, ainsi que ceux que j'ai dû corriger en raison de problèmes techniques :</p>
-            </div>
-            <div class="study-projects">
-                <div class="card">
-                    <div class="card-content " >
-                        <h3>Booki</h3>
-                        <p>Ce projet est l'un de mes tout premiers projets, inspiré d'un véritable site de réservation d'hôtel. Il m'a appris à gérer la structure d'un site web, puis de l'adapter en format bureau, tablette et portable.</p>
-                        <p class="github-link">
-                            <i class="fa-brands fa-github"></i>
-                            <a href="https://github.com/Calvin0411/Booki" target="_blank"> https://github.com/Calvin0411/Booki</a>
-                        </p>
-                    </div>
-                    <a href="https://booki-calvin.netlify.app/" class="card-link card-image-wrapper" target="_blank">
-                        <img src="img/public/booki_calvin_webp.webp" alt="booki" class="card-image">
-                    </a>
-                </div>
+</section>
 
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Ohmyfood</h3>
-                        <p>Ce projet m'a demandé un certain temps, mais il m'a permis d'apprendre à réaliser mes premières animations en utilisant CSS et SASS. Tout comme son prédécesseur, le site est compatible avec tous les formats.</p>
-                        <p class="github-link">
-                            <i class="fa-brands fa-github"></i>
-                            <a href="https://github.com/Calvin0411/Projet-4" target="_blank"> https://github.com/Calvin0411/Projet-4</a>
-                        </p>
-                    </div>
-                    <a href="https://ohmyfood-calvin.netlify.app/" class="card-link" target="_blank">
-                        <img src="img/public/ohmyfood_calvin_webp.webp" alt="ohmyfood" class="card-image">
-                    </a>
-                </div>
+<section id="projets" class="study-projects-section">
+  <div class="study-projects-intro">
+    <h2 class="title-project">Projets</h2>
+    <p>
+      Au cours de ma formation, j'ai eu l'opportunité de travailler sur divers projets d'études, chacun d'eux m'ayant permis d'acquérir de nouvelles compétences, allant des tâches les plus simples aux plus complexes. Voici un aperçu de certains de mes projets réalisés dans leur intégralité, ainsi que ceux que j'ai dû corriger en raison de problèmes techniques :
+    </p>
+  </div>
 
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Print it !</h3>
-                        <p>Ce projet a été le tout premier site que j'ai eu à "réparer". J'ai utilisé JavaScript pour la première fois, un langage qui m'a demandé un certain temps pour en comprendre le fonctionnement.</p>
-                        <p class="github-link">
-                            <i class="fa-brands fa-github"></i>
-                            <a href="https://github.com/Calvin0411/Print-it-JS-main" target="_blank">https://github.com/Calvin0411/Print-it-JS-main</a>
-                        </p>
-                    </div>
-                    <a href="https://print-it-calvin.netlify.app/" class="card-link" target="_blank">
-                        <img src="img/public/print_it_calvin_webp.webp" alt="Print It !" class="card-image">
-                    </a>
-                </div>
+  <div class="study-projects">
 
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Nina Carducci</h3>
-                        <p>Ce projet a été l'un des plus simple lors de ma formation, il concisistait à améliorer son référencement tout en corrigeant certaines erreurs interne.</p>
-                        <p class="github-link">
-                            <i class="fa-brands fa-github"></i>
-                            <a href="https://github.com/Calvin0411/ninacarducci.github.io-main" target="_blank">https://github.com/Calvin0411/ninacarducci</a>
-                        </p>
-                    </div>
-                    <a href="https://ninacarducci-calvin.netlify.app/" class="card-link" target="_blank">
-                        <img src="img/public/nina_carducci_calvin_webp.webp" alt="Nina Carducci" class="card-image">
-                    </a>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Sophie Bluel</h3>
-                        <p>Ce site est considéré comme le projet le plus complexe de la formation, car il nous enseigne l'utilisation des routes pour se connecter à une page web à l'aide de nos identifiants.</p>
-                        <p class="github-link">
-                            <i class="fa-brands fa-github"></i>
-                            <a href="https://github.com/Calvin0411/Portfolio-architecte-sophie-bluel-master" target="_blank">https://github.com/Calvin0411/Portfolio-architecte-sophie-bluel-master</a>
-                        </p>
-                    </div>
-                    <a href="https://sophie-bluel-architect.vercel.app/" target="_blank">
-                        <img src="img/public/sophie_bluel_webp.webp" alt="Sophie Bluel" class="card-image">
-                    </a>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Kasa</h3>
-                        <p>C'était mon tout premier projet réalisé avec React, une bibliothèque qui facilite l'écriture d'un code clair en évitant les répétitions. Je dois avouer que c'est l'un de mes projets préférés !</p>
-                        <p class="github-link">
-                            <i class="fa-brands fa-github"></i>
-                            <a href="https://github.com/Calvin0411/P7-KSA" target="_blank">https://github.com/Calvin0411/P7-KSA</a>
-                        </p>
-                    </div>
-                    <a href="https://kasa-calvin.netlify.app/" target="_blank">
-                        <img src="img/public/kasa_calvin_webp.webp" alt="Kasa" class="card-image">
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer" id="contact">
-        <div class="contact-section">
-            <h2>Contact</h2>
-            <a href="mailto:ramjeeawoncalvin@gmail.com" class="contact-link"><i class="fa-regular fa-envelope"></i> ramjeeawoncalvin@gmail.com</a>
-            <span class="contact-item"><i class="fa-solid fa-phone"></i> 060391XXXX</span>
-        </div>
-        
-        <div class="social-section">
-            <h2>Réseaux</h2>
-            <a href="https://www.instagram.com/calvin_rawn/" target="_blank" class="social-link"><i class="fa-brands fa-instagram"></i> @calvin_rawn</a>
-            <a href="https://www.youtube.com/@Calvin_rawn" target="_blank" class="social-link"><i class="fa-brands fa-youtube"></i> @Calvin_rawn</a>
-            <a href="https://threads.net/@calvin_rawn" target="_blank" class="social-link"><i class="fa-brands fa-threads"></i> @calvin_rawn</a>
-            <a href="https://github.com/Calvin0411" target="_blank" class="social-link"><i class="fa-brands fa-github"></i> Calvin0411</a>
+  <div class="card" onclick="window.open('https://booki-calvin.netlify.app/', '_blank')">
+    <img src="img/public/booki_calvin_webp.webp" alt="Booki" class="card-image">
+    <div class="card-content">
+      <h3>Booki</h3>
+      <p>Ce projet est l'un de mes tout premiers projets, inspiré d'un véritable site de réservation d'hôtel. Il m'a appris à gérer la structure d'un site web, puis de l'adapter en format bureau, tablette et portable.</p>
+      <p class="github-link">
+        <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/Calvin0411/Booki" target="_blank">Voir le code</a>
+      </p>
+    </div>
+  </div>
 
-            <!-- 
+  <div class="card" onclick="window.open('https://ohmyfood-calvin.netlify.app/', '_blank')">
+    <img src="img/public/ohmyfood_calvin_webp.webp" alt="Ohmyfood" class="card-image">
+    <div class="card-content">
+      <h3>Ohmyfood</h3>
+      <p>Ce projet m'a demandé un certain temps, mais il m'a permis d'apprendre à réaliser mes premières animations en utilisant CSS et SASS. Tout comme son prédécesseur, le site est compatible avec tous les formats.</p>
+      <p class="github-link">
+        <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/Calvin0411/Projet-4" target="_blank">Voir le code</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="card" onclick="window.open('https://print-it-calvin.netlify.app/', '_blank')">
+    <img src="img/public/print_it_calvin_webp.webp" alt="Print It !" class="card-image">
+    <div class="card-content">
+      <h3>Print it !</h3>
+      <p>Ce projet a été le tout premier site que j'ai eu à "réparer". J'ai utilisé JavaScript pour la première fois, un langage qui m'a demandé un certain temps pour en comprendre le fonctionnement.</p>
+      <p class="github-link">
+        <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/Calvin0411/Print-it-JS-main" target="_blank">Voir le code</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="card" onclick="window.open('https://ninacarducci-calvin.netlify.app/', '_blank')">
+    <img src="img/public/nina_carducci_calvin_webp.webp" alt="Nina Carducci" class="card-image">
+    <div class="card-content">
+      <h3>Nina Carducci</h3>
+      <p>Ce projet a été l'un des plus simples lors de ma formation, il consistait à améliorer son référencement tout en corrigeant certaines erreurs internes.</p>
+      <p class="github-link">
+        <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/Calvin0411/ninacarducci.github.io-main" target="_blank">Voir le code</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="card" onclick="window.open('https://sophie-bluel-architect.vercel.app/', '_blank')">
+    <img src="img/public/sophie_bluel_webp.webp" alt="Sophie Bluel" class="card-image">
+    <div class="card-content">
+      <h3>Sophie Bluel</h3>
+      <p>Ce site est considéré comme le projet le plus complexe de la formation, car il nous enseigne l'utilisation des routes pour se connecter à une page web à l'aide de nos identifiants.</p>
+      <p class="github-link">
+        <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/Calvin0411/Portfolio-architecte-sophie-bluel-master" target="_blank">Voir le code</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="card" onclick="window.open('https://kasa-calvin.netlify.app/', '_blank')">
+    <img src="img/public/kasa_calvin_webp.webp" alt="Kasa" class="card-image">
+    <div class="card-content">
+      <h3>Kasa</h3>
+      <p>C'était mon tout premier projet réalisé avec React, une bibliothèque qui facilite l'écriture d'un code clair en évitant les répétitions. Je dois avouer que c'est l'un de mes projets préférés !</p>
+      <p class="github-link">
+        <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/Calvin0411/P7-KSA" target="_blank">Voir le code</a>
+      </p>
+    </div>
+  </div>
+
+</section>
+</main>
+<footer class="footer" id="contact">
+  <div class="footer-column contact-section">
+    <h3>Contact</h3>
+    <a href="mailto:ramjeeawoncalvin@gmail.com">
+      <i class="fa-regular fa-envelope"></i> ramjeeawoncalvin@gmail.com
+    </a>
+    <span class="contact-item"><i class="fa-solid fa-phone"></i> 060391XXXX</span>
+  </div>
+
+  <div class="footer-column social-section">
+    <h3>Réseaux</h3>
+    <a href="https://www.instagram.com/calvin_rawn/" target="_blank" class="social-link">
+      <i class="fa-brands fa-instagram"></i> @calvin_rawn
+    </a>
+    <a href="https://www.youtube.com/@Calvin_rawn" target="_blank" class="social-link">
+      <i class="fa-brands fa-youtube"></i> @Calvin_rawn
+    </a>
+    <a href="https://threads.net/@calvin_rawn" target="_blank" class="social-link">
+      <i class="fa-brands fa-threads"></i> @calvin_rawn
+    </a>
+    <a href="https://github.com/Calvin0411" target="_blank" class="social-link">
+      <i class="fa-brands fa-github"></i> Calvin0411
+    </a>
+  </div>
+
+  <div class="footer-column legal-section">
+    <p>© 2025 Calvin Rawn - Tous droits réservés</p>
+    <a href="https://fr.wikipedia.org/wiki/Politique_de_confidentialit%C3%A9" target="_blank">Politique de confidentialité</a>
+
+  </div>
+</footer>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span id="closeModalBtn" class="close">&times;</span>
+    <h2>Créations</h2>
+    <p>Cette section est à venir très bientôt ! Restez connecté.</p>
+  </div>
+</div>
+<script>
+  const modal = document.getElementById('modal');
+  const openModalBtn = document.getElementById('openModalBtn');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+
+  openModalBtn.addEventListener('click', function(e) {
+    e.preventDefault(); // empêche le scroll vers #creations
+    modal.style.display = 'block';
+  });
+
+  closeModalBtn.addEventListener('click', function() {
+    modal.style.display = 'none';
+  });
+
+  // Fermer la modale quand on clique en dehors du contenu
+  window.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+</script>
+<!-- 
          
                                 ████          
                                 ██  ██        
@@ -390,79 +419,7 @@
   ██████████                                  
                                               
  -->
-        </div>
-    </footer>
-<!-- Modal HTML -->
-<div id="renovationModal" class="modal">
-  <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <h2>Page en rénovation</h2>
-    <p>🚧 Cette page est actuellement en rénovation. 🛠️ Une version améliorée et plus travaillée arrivera très bientôt. Merci de votre patience ! ⏳</p>
-  </div>
-</div>
 
-<!-- Styles CSS -->
-<style>
-  /* Fond sombre semi-transparent */
-  .modal {
-    display: none; /* cachée par défaut */
-    position: fixed;
-    z-index: 1000;
-    left: 0; top: 0;
-    width: 100%; height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.5);
-  }
-
-  /* Contenu de la modal */
-  .modal-content {
-    background-color: #fff;
-    margin: 15% auto;
-    padding: 20px 30px;
-    border-radius: 8px;
-    width: 90%;
-    max-width: 400px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    text-align: center;
-  }
-
-  /* Bouton de fermeture */
-  .close-btn {
-    color: #aaa;
-    float: right;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-
-  .close-btn:hover {
-    color: #000;
-  }
-</style>
-
-<!-- Script JavaScript -->
-<script>
-  // Affiche la modal au chargement
-  window.onload = function() {
-    const modal = document.getElementById("renovationModal");
-    const closeBtn = document.querySelector(".close-btn");
-
-    modal.style.display = "block";
-
-    // Fermer la modal en cliquant sur la croix
-    closeBtn.onclick = function() {
-      modal.style.display = "none";
-    };
-
-    // Fermer la modal si clic à l'extérieur du contenu
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    };
-  };
-</script>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

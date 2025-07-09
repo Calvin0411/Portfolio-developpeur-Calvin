@@ -1,54 +1,145 @@
-header {
-    margin: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(164 171 197);
-    border-radius: 20px;
-    padding-left: 15px;
-    padding-right: 30px;
-}
- 
-.logo img {
-    height: 100px; 
-}
-  
-.navigation ul {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-}
-  
-.navigation a {
-    color: black;
-    text-decoration: none;
-}
-  
-.navigation a:hover {
-    color: #a17d60; 
+/* ✅ Header plein écran */
+#accueil {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  background: none; /* On enlève l’image ici, car elle sera dans ::before */
 }
 
+/* ✅ Image de fond recadrée dans un pseudo-élément */
+#accueil::before {
+  content: "";
+  position: absolute;
+  top: -10%;       /* Décalage vers le haut pour couper 10% en haut */
+  left: 0;
+  width: 100%;
+  height: 120%;    /* Hauteur augmentée pour compenser la coupure en bas */
+  background-image: url('/img/calvin_à_la_plage_Albion.webp');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  background-repeat: no-repeat;
+}
+
+/* ✅ Filtre sombre pour contraste (au-dessus de l’image) */
+#accueil > .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+/* ✅ Titre centré */
+#accueil h1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #1b1f24;
+  font-size: 4rem;
+  font-weight: bold;
+  z-index: 2;
+  text-align: center;
+}
+
+/* ✅ Bloc contenu */
+#accueil .content {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  max-width: 80%;
+  z-index: 2;
+}
+
+/* ✅ Sous-titre */
+#accueil h2 {
+  font-size: 5rem;
+  margin: 0 0 1rem;
+}
+
+/* ✅ Paragraphe */
+#accueil p {
+  font-size: 2rem;
+  line-height: 1.4;
+  max-width: 1000px;
+  margin-top: 10%;
+}
+
+/* ✅ Bouton */
+.contact-link {
+  display: inline-block;
+  margin-top: 5%;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 1px;
+}
+
+.contact-link i {
+  margin-right: 0.5rem;
+}
+
+.main-nav {
+  background-color: #f5f5dc;
+  padding: 10px 40px;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  list-style: none;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase; /* ✅ Majuscules */
+  transition: transform 0.2s ease, color 0.2s ease;
+  display: inline-block; /* Pour permettre le transform */
+}
+
+.main-nav a:hover {
+  color: #a17d60;
+  transform: scale(1.1); /* ✅ Effet zoom */
+}
+
+
+/* ======= VERSION MOBILE ======= */
 @media (max-width: 768px) {
 
-    header{
-        padding: 0%;
-        border-radius: 0px;
-        padding-right: 20px;
-    }
+  #accueil::before {
+    background-image: url('/img/calvin_plage_albion_telephone.webp');
+  }
 
-    .logo img {
-        width: auto;
-        height: 50px; 
-        padding-left: 10px;
-    }
+  #accueil h1 {
+    font-size: 3rem;
+  }
 
-    .navigation ul {
-        flex-direction: row; 
-        gap: 10px; 
-    }
+  #accueil h2 {
+    font-size: 3rem;
+    padding-bottom: 5%;
+  }
 
-    .navigation a {
-        font-size: 10px;
-    }
+  #accueil p {
+    font-size: 1.5rem;
+    padding-bottom: 5%;
+    max-width: 90%;
+  }
+
+  .main-nav ul {
+    align-items: flex-end;
+    gap: 15px; /* Réduit l’espace */
+  }
+
+  .main-nav a {
+    font-size: 11px; /* Réduit la taille de texte */
+  }
+
 }
+

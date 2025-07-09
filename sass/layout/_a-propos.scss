@@ -1,73 +1,69 @@
-.a-propos {
-    display: flex;
-    align-items: center;
-    padding: 40px 20px;
-    color: #333; 
-    
-  }
+.présentation{
+  background: linear-gradient(
+    to bottom, /* ou to right, to top, selon ton effet */
+    #F5F5DC,
+    white
   
-  .a-propos h2 {
-    color: #a17d60; 
-    font-size: 2rem;
-    margin-bottom: 10px;
-    
+  );
+}
+
+/* ✅ TITRE : inchangé */
+.title-section {
+  font-size: 60px;
+  margin-left: 10%;
+  color: #a17d60;
+  margin-top: 0;
+}
+
+/* ✅ PARAGRAPHE : inchangé */
+.présentation p {
+  flex: 2;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+/* ✅ NOUVEAU : conteneur qui aligne texte et image */
+.présentation-content {
+  display: flex;
+  align-items: center;           /* espace entre p et img */
+}
+
+/* ✅ Image : limite largeur pour pas déborder */
+.présentation-content img {
+  max-width: 100%;
+  margin-right: 10%;
+  height: auto;
+  border-radius: 2px;
+}
+
+/* ✅ RESPONSIVE : même style inchangé + conteneur en colonne */
+@media (max-width: 768px) {
+  .title-section {
+    font-size: 30px;
+    margin-top: 10%;
+    margin-left: 10%;
+    color: #a17d60;
+    margin-top: 0;
   }
-  
-  .a-propos h3 {
-    font-size: 1.5rem;
-    color: #555;
-    margin-bottom: 15px;
-  }
-  
-  .a-propos p {
+
+  .présentation p {
+    flex: 2;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
     font-size: 1rem;
     line-height: 1.6;
-    color: #666;
-  }
-  
-  .a-propos img {
-    width: 350px; 
-    height: auto;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-  }
-  
-  .a-propos div:first-child {
-    flex: 1;
-    padding-right: 100px;
   }
 
-  @media (max-width: 768px) {
-
-    .a-propos {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    .a-propos div:first-child {
-      padding-right: 10px;
-    }
-
-    .a-propos h2 {
-      color: #a17d60; 
-      font-size: 20px;
-      
-    }
-    
-    .a-propos h3 {
-      font-size: 15px;
-    }
-    
-    .a-propos p {
-      font-size: 14px;
-      line-height: 1.6;
-      color: #666;
-    }
-
-    .a-propos img {
-      width: 300px; 
-      height: auto;
-      padding-top: 5%;
-    }
+  .présentation-content {
+    flex-direction: column; /* passe en colonne */
+    align-items: center;    /* centre le tout */
   }
+
+  .présentation-content img {
+    max-width: 80%; /* plus grand en mobile */
+    margin-right: 0;
+  }
+}

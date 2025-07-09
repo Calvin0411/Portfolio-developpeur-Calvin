@@ -1,56 +1,11 @@
+/* ✅ Style général du body */
 body {
-    background-color: #f8f7f6;
-    font-family: roboto; 
-    color: #333; 
-    margin-top: 0;
-    padding-top: 10px;
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-  
-  @media (max-width: 1550px) {
-    body {
-    margin-left: 10%;
-    margin-right: 10%;
-    }
-  }
-
-  @media (max-width: 1024px) {
-    body {
-    margin-left: 5%;
-    margin-right: 5%;
-    }
-  }
-
-  @media (max-width: 768px) {
-    body {
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 0;
-    }
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  /* Styles pour la scrollbar entière */
-::-webkit-scrollbar {
-  width: 15px; 
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Arimo", sans-serif;
 }
 
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 15px; 
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #a17d60; 
-  border-radius: 10px; 
-  border: 2px solid #f1f1f1; 
-}
-
-/* Style pour la thumb au survol */
-::-webkit-scrollbar-thumb:hover {
-  background-color: #6b4b34; 
+html {
+  scroll-behavior: smooth;
 }
