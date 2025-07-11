@@ -46,7 +46,7 @@
 
 .project-card img {
   width: 100%;
-  height: 300px; /* hauteur fixe pour rendre les cartes uniformes */
+  height: 400px; /* hauteur fixe pour rendre les cartes uniformes */
   object-fit: cover; /* pour recadrer proprement */
   display: block;
 }
@@ -77,18 +77,6 @@
   color: #000;
 }
 
-@media (min-width: 768px) {
-  .study-projects {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem;
-  }
-
-  .project-card {
-    width: 700px; /* plus large */
-  }
-}
 
 .project-card {
   opacity: 0;
@@ -100,4 +88,69 @@
 .project-card.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Responsive */
+
+/* Tablettes et plus larges (≥ 768px) */
+@media (min-width: 768px) {
+  .study-projects-intro,
+
+  .title-project {
+    font-size: 3rem; /* un peu plus petit */
+  }
+
+  .study-projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .project-card {
+    width: 45%; /* deux cartes par ligne */
+  }
+}
+
+/* Smartphones (≤ 767px) */
+@media (max-width: 767px) {
+  .study-projects-intro,
+  .study-projects {
+    width: 95%;
+  }
+
+  .title-project {
+    font-size: 30px; /* plus petit sur mobile */
+    margin-bottom: 2rem;
+  }
+
+  .study-projects-intro p {
+    font-size: 1rem;
+  }
+
+  .study-projects {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .project-card img {
+    height: 200px; /* hauteur réduite sur mobile */
+  }
+
+  .project-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .github-link {
+    font-size: 1.8rem;
+  }
+
+  .skills-container{
+    gap: 10px;
+  }
+  
 }

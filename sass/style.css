@@ -11,6 +11,30 @@ html {
   scroll-behavior: smooth;
 }
 
+/* La barre de défilement */
+::-webkit-scrollbar {
+  width: 12px; /* largeur de la scrollbar verticale */
+  height: 12px; /* hauteur de la scrollbar horizontale */
+}
+
+/* Le fond de la barre de défilement */
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* couleur du track */
+  border-radius: 10px;
+}
+
+/* Le "thumb" (la partie qu'on fait glisser) */
+::-webkit-scrollbar-thumb {
+  background-color: #a17d60; /* couleur du curseur */
+  border-radius: 10px;
+  border: 3px solid #f0f0f0; /* ajoute un espace autour */
+}
+
+/* Au survol du curseur */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7a5a40;
+}
+
 .competences-cards {
   display: flex;
   justify-content: space-evenly;
@@ -312,7 +336,6 @@ html {
     margin-top: 10%;
     margin-left: 10%;
     color: #a17d60;
-    margin-top: 0;
   }
   .présentation p {
     flex: 2;
@@ -489,6 +512,15 @@ html {
   transition-delay: 0.8s;
 }
 
+/* ✅ RESPONSIVE : même style inchangé + conteneur en colonne */
+@media (max-width: 768px) {
+  .skills-section h2 {
+    font-size: 30px;
+  }
+  .skills-section .subtitle {
+    font-size: 1rem;
+  }
+}
 .modal {
   display: none; /* cachée par défaut */
   position: fixed;
@@ -735,7 +767,7 @@ html {
 
 .project-card img {
   width: 100%;
-  height: 300px; /* hauteur fixe pour rendre les cartes uniformes */
+  height: 400px; /* hauteur fixe pour rendre les cartes uniformes */
   -o-object-fit: cover;
      object-fit: cover; /* pour recadrer proprement */
   display: block;
@@ -767,17 +799,6 @@ html {
   color: #000;
 }
 
-@media (min-width: 768px) {
-  .study-projects {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem;
-  }
-  .project-card {
-    width: 700px; /* plus large */
-  }
-}
 .project-card {
   opacity: 0;
   transform: translateY(20px);
@@ -790,6 +811,56 @@ html {
   transform: translateY(0);
 }
 
+/* Responsive */
+/* Tablettes et plus larges (≥ 768px) */
+@media (min-width: 768px) {
+  .study-projects-intro,
+  .title-project {
+    font-size: 3rem; /* un peu plus petit */
+  }
+  .study-projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .project-card {
+    width: 45%; /* deux cartes par ligne */
+  }
+}
+/* Smartphones (≤ 767px) */
+@media (max-width: 767px) {
+  .study-projects-intro,
+  .study-projects {
+    width: 95%;
+  }
+  .title-project {
+    font-size: 30px; /* plus petit sur mobile */
+    margin-bottom: 2rem;
+  }
+  .study-projects-intro p {
+    font-size: 1rem;
+  }
+  .study-projects {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .project-card {
+    width: 100%;
+  }
+  .project-card img {
+    height: 200px; /* hauteur réduite sur mobile */
+  }
+  .project-info h3 {
+    font-size: 1.2rem;
+  }
+  .github-link {
+    font-size: 1.8rem;
+  }
+  .skills-container {
+    gap: 10px;
+  }
+}
 /* SECTION MAPS */
 .fortnite-maps-section {
   width: 100%;
@@ -895,4 +966,46 @@ html {
   margin: 1rem 0 0 0;
   font-size: 1.2rem;
   color: #333;
+}
+
+/* Smartphones (≤ 767px) */
+@media (max-width: 767px) {
+  .fortnite-maps-intro {
+    width: 95%;
+    margin-bottom: 2rem;
+  }
+  .maps-title {
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+  }
+  .fortnite-maps-intro p {
+    font-size: 1rem;
+  }
+  .maps-container {
+    width: 95%;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .map-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .map-image {
+    aspect-ratio: 4/3; /* un peu plus carré sur mobile */
+  }
+  .map-info {
+    padding: 1rem;
+  }
+  .map-info h3 {
+    font-size: 1.5rem;
+  }
+  .map-info p {
+    font-size: 1rem;
+  }
+  .trailer-link {
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    top: 0.8rem;
+    right: 0.8rem;
+  }
 }/*# sourceMappingURL=style.css.map */

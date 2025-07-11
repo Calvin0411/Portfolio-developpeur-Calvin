@@ -114,3 +114,17 @@
 .skills-container .fade-in:nth-child(3) {
   transition-delay: 0.8s;
 }
+
+
+/* ✅ RESPONSIVE : même style inchangé + conteneur en colonne */
+@media (max-width: 768px) {
+
+  .skills-section h2 {
+    font-size: 30px;
+  }
+
+  .skills-section .subtitle {
+    font-size: 1rem;
+  }
+
+}

@@ -9,3 +9,27 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* La barre de défilement */
+::-webkit-scrollbar {
+  width: 12px; /* largeur de la scrollbar verticale */
+  height: 12px; /* hauteur de la scrollbar horizontale */
+}
+
+/* Le fond de la barre de défilement */
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* couleur du track */
+  border-radius: 10px;
+}
+
+/* Le "thumb" (la partie qu'on fait glisser) */
+::-webkit-scrollbar-thumb {
+  background-color: #a17d60; /* couleur du curseur */
+  border-radius: 10px;
+  border: 3px solid #f0f0f0; /* ajoute un espace autour */
+}
+
+/* Au survol du curseur */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7a5a40;
+}
