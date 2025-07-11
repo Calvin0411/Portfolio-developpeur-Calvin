@@ -1,54 +1,39 @@
-function openModal(modalId) {
-    const modal = document.getElementById(modalId);
-    modal.style.display = "block";
-    modal.setAttribute("aria-hidden", "false");
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.project-card');
 
-    // Déplace le focus sur la modale
-    modal.querySelector('.modal-content').focus();
+  function checkVisibility() {
+    const windowHeight = window.innerHeight;
 
-    // Permet de fermer la modale avec la touche "Échap"
-    document.addEventListener("keydown", handleEscapeKey);
-}
+    cards.forEach(card => {
+      const rect = card.getBoundingClientRect();
+      if (rect.top < windowHeight * 0.9) {  // déclenche un peu avant le bas de la fenêtre
+        card.classList.add('visible');
+      }
+    });
+  }
 
-function closeModal(modalId) {
-    const modal = document.getElementById(modalId);
-    modal.style.display = "none";
-    modal.setAttribute("aria-hidden", "true");
+  window.addEventListener('scroll', checkVisibility);
+  window.addEventListener('resize', checkVisibility);
 
-    // Récupère l'élément déclencheur et redonne le focus
-    const trigger = document.querySelector(`[onclick="openModal('${modalId}')"]`);
-    if (trigger) trigger.focus();
+  // On lance une première fois au chargement
+  checkVisibility();
+});
 
-    document.removeEventListener("keydown", handleEscapeKey);
-}
 
-// Ferme la modale au clique en dehors d'elle
-window.onclick = function(event) {
-    if (event.target.className === 'modal') {
-        closeModal(event.target.id);
-    }
-};
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.map-card');
 
-// Gère l'événement de la touche "Échap" pour fermer la modale
-function handleEscapeKey(event) {
-    if (event.key === "Escape") {
-        const openModal = document.querySelector('.modal[style*="display: block"]');
-        if (openModal) {
-            closeModal(openModal.id);
-        }
-    }
-}
+  function checkVisibility() {
+    const windowHeight = window.innerHeight;
+    cards.forEach(card => {
+      const rect = card.getBoundingClientRect();
+      if (rect.top < windowHeight * 0.9) {
+        card.classList.add('visible');
+      }
+    });
+  }
 
-// Gère l'événement de la touche "Entrée" pour ouvrir une modale
-function handleKey(event, modalId) {
-    if (event.key === "Enter") {
-        openModal(modalId);
-    }
-}
-
-// Gère l'événement de la touche "Entrée" pour fermer une modale via le bouton de fermeture
-function handleCloseKey(event, modalId) {
-    if (event.key === "Enter") {
-        closeModal(modalId);
-    }
-}
+  window.addEventListener('scroll', checkVisibility);
+  window.addEventListener('resize', checkVisibility);
+  checkVisibility();
+});

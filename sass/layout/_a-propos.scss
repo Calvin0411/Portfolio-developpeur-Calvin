@@ -1,10 +1,6 @@
 .présentation{
-  background: linear-gradient(
-    to bottom, /* ou to right, to top, selon ton effet */
-    #F5F5DC,
-    white
-  
-  );
+  background:#f5f5dc;
+  padding-top: 3%
 }
 
 /* ✅ TITRE : inchangé */
@@ -27,7 +23,8 @@
 /* ✅ NOUVEAU : conteneur qui aligne texte et image */
 .présentation-content {
   display: flex;
-  align-items: center;           /* espace entre p et img */
+  align-items: center;
+  padding-bottom: 3%;           /* espace entre p et img */
 }
 
 /* ✅ Image : limite largeur pour pas déborder */
@@ -37,6 +34,18 @@
   height: auto;
   border-radius: 2px;
 }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /* ✅ RESPONSIVE : même style inchangé + conteneur en colonne */
 @media (max-width: 768px) {
